@@ -22,7 +22,7 @@ void player() {
       walkframe = walkframe+1;
       idleframe = 0;
     }
-    if(!arduboy.pressed(LEFT_BUTTON) || !arduboy.pressed(RIGHT_BUTTON))
+    if(!arduboy.pressed(LEFT_BUTTON) && !arduboy.pressed(RIGHT_BUTTON))
     {
       walkframe = -1;
     }
